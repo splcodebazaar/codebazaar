@@ -1,4 +1,4 @@
-/* =======header CSS======= */
+/* =======header Js======= */
 
 let navigation = document.getElementById('menu');
 let menuOn = document.getElementById("show-menu");
