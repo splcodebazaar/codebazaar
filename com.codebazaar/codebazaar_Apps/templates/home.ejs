@@ -12,13 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Important CSS internal linkings -->
-  <link rel="stylesheet" href="../staticFiles/CSS files/codebazaar.css" type="text/css">
-  <link rel="stylesheet" href="../staticFiles/CSS files/desktopmedia.css" type="text/css">
-  <link rel="stylesheet" href="../staticFiles/CSS files/phonemedia.css" type="text/css">
+  <link rel="stylesheet" href="/staticFiles/styleSheet files/codebazaar.css" type="text/css">
+  <link rel="stylesheet" href="/staticFiles/styleSheet files/desktopmedia.css" type="text/css">
+  <link rel="stylesheet" href="/staticFiles/styleSheet files/phonemedia.css" type="text/css">
 
   <!-- Important JS internal linkings -->
-  <script src="../staticFiles/JavaScript files/common.js" type="text/javascript" async></script>
-  <!-- <script src="../staticFiles/JavaScript files/header.js" type="text/javascript" async></script> -->
+  <script src="/staticFiles/JavaScript files/common.js" type="text/javascript" async></script>
+  <script src="/staticFiles/JavaScript files/header.js" type="text/javascript" async></script>
+  <script src="/staticFiles/JavaScript files/footer.js" type="text/javascript" async></script>
 
   <!-- important j-Query external linkings -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -46,22 +47,20 @@
      partializing header section 
   ================================-->
 
-  <script>
-    $(function () {
-      $("#navBar").load("../partials/navbar.html");
-    });
-  </script>
-
-  <div id="navBar"></div>
+  <%- include('partialFiles/navbar') %>
 
   <!-- ==============================
           Home Page section 
   ================================-->
 
+  <h1>Welcome to the Home Page</h1>
 
   <!-- ==============================
      partializing footer section 
   ================================-->
+
+  <%- include('partialFiles/footer') %>
+
 </body>
 
 </html>

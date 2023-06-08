@@ -188,3 +188,131 @@ body{
 .menu-toggle .hide-menu {
     display: none;
 }
+
+
+
+/* =======CONFIG-footer CSS======= */
+
+.bottom-nav {
+    margin: auto;
+    max-width: 1600px;
+    min-width: 300px; 
+    outline: 1px solid black;
+    display: flex; width: 100%;
+    padding: 3rem 3rem 3rem 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(90deg, #000000d5, #a90404);
+}
+
+/* contact - navifations */
+
+.bottom-nav .contact-nav {   
+    padding-right: 3rem;   
+}
+
+/* logo-social navigations */
+
+.bottom-nav .contact-nav .logo-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-nav .contact-nav 
+.logo-social img.logo {
+    width: 40px;
+    opacity: 0.7;
+    aspect-ratio: 1/1.1;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 3px #000000b6;
+}
+
+.bottom-nav .contact-nav 
+.logo-social .social{
+    margin-left: 2rem;
+    padding-top: .5rem;
+}
+
+.bottom-nav .contact-nav 
+.logo-social .social a {
+    font-size: 130%;
+    color: #000000;
+    margin-left: 0.5rem;
+    padding: .2rem .5rem;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 5px 5px black;
+}
+
+/* mailing contacts navigations */
+
+.bottom-nav .contact-nav .mail-contacts {
+    display: flex; flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+.bottom-nav .contact-nav span.mail {
+    display: flex;
+    flex-grow: 1;
+    color: #ffffff9c;
+    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+    border-bottom: 2px dotted #fff;
+}
+
+.bottom-nav .contact-nav a.mail {
+    font-size: 150%;
+    color: white;
+}
+
+/* liscensing Docs. of site navigations */
+
+.bottom-nav .liscense-nav {
+    flex-grow: 1;
+    text-align: center;
+    align-self: flex-end;
+    text-transform: capitalize;
+}
+
+.bottom-nav .liscense-nav span{
+    font-size: 80%;
+    margin: 0% .5rem;
+}
+
+.bottom-nav .liscense-nav span a {
+    color: #ffffff9c;
+}
+
+/* direct page navigations */
+
+.bottom-nav .links-nav {
+    display: flex;
+    padding-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+/* page-links */
+
+.bottom-nav .links-nav ul {
+    font-size: 90%;
+    list-style: none;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+/* page-links heads */
+
+.bottom-nav .links-nav ul span {
+    font-style: oblique;
+    font-size: 300%;
+    color: #ffffff;
+    letter-spacing: .5rem;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.bottom-nav .links-nav ul a {
+    color: white;
+}

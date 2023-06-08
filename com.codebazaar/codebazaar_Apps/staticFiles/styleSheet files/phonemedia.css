@@ -1,0 +1,237 @@
+/* =======header CSS======= */
+
+/* for large Tabs */
+@media only screen and (max-width: 992px) {
+
+    .head {
+        height: 80px;
+    }
+
+    .head>.lft-menu img.logo {
+        height: 65px;
+        aspect-ratio: 1.1/1;
+    }
+
+    .head>.lft-menu .logo-txt {
+        font-size: 250%;
+    }
+
+    .menu {
+        position: absolute;
+        background: transparent;
+        z-index: 10;
+        width: 100%;
+        right: 0%;
+        left: 0%;
+        bottom: -110%;
+        flex-flow: column;
+        height: calc(100% - 55px);
+        justify-content: center;
+        backdrop-filter: blur(50px);
+        animation: menu-slide 1s ease-out 1;
+        animation-fill-mode: forwards;
+        display: none;
+    }
+
+    @keyframes menu-slide {
+        100% {
+            bottom: 0%;
+        }
+    }
+
+    /* middle-menubar */
+
+    .menu .mid-menu {
+        display: grid;
+        place-items: center;
+    }
+
+    .menu .mid-menu a.menu-items {
+        width: 100%;
+        color: white;
+        padding: 1rem;
+        border-radius: 0%;
+        border-bottom: 1px solid white;
+    }
+
+    .products-menu {
+        color: #fff;
+        padding: 1rem;
+        border-bottom: 1px solid white;
+    }
+
+    /* right-menubar */
+
+    .head .ryt-menu a.highlights {
+        margin: 0%;
+        margin: 1rem 0;
+        font-size: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    /* document light modes */
+
+    .head .modes .lights-mode {
+        font-size: 300%;
+
+    }
+
+    /* menubar-toggler */
+
+    .menu-toggle {
+        display: initial;
+        font-size: xx-large;
+    }
+}
+
+
+/* medium & small Tabs/ iPads / Phones */
+@media only screen and (max-width: 576px) {
+
+    .head {
+        height: 55px;
+        padding: 0 1rem;
+    }
+
+    .head>.lft-menu img.logo {
+        height: 45px;
+        aspect-ratio: 1.1/1;
+    }
+
+    .head>.lft-menu .logo-txt {
+        font-size: 160%;
+    }
+
+    /* document light modes */
+
+    .head .modes .lights-mode {
+        font-size: 200%;
+
+    }
+
+    /* menubar-toggler */
+
+    .menu-toggle {
+        display: initial;
+        font-size: large;
+    }
+}
+
+
+
+/* =======footer CSS======= */
+
+/* large Tabs / iPads */
+@media only screen and (max-width: 992px) {
+
+    .bottom-nav {
+        align-items: center;
+        flex-flow: column-reverse;
+    }
+
+    .wrap {
+        margin-bottom: 2rem;
+    }
+
+    /* logo-social navigations */
+
+    .bottom-nav .contact-nav .logo-social img.logo {
+        width: 60px;
+    }
+
+    .bottom-nav .contact-nav .logo-social .social a {
+        font-size: 200%;
+        padding: .5rem 1rem;
+    }
+
+    /* mail contact - navigations */
+
+    .bottom-nav .contact-nav {
+        padding-right: 0rem;
+        order: 3;
+    }
+
+    .bottom-nav .contact-nav span.mail {
+        font-size: 150%;
+    }
+
+    .bottom-nav .contact-nav a.mail {
+        font-size: 280%;
+    }
+
+    /* direct page navigations */
+
+    .bottom-nav .links-nav {
+        padding-bottom: 0rem;
+    }
+
+    /* page-links */
+
+    .bottom-nav .links-nav ul {
+        padding: 0rem 1rem;
+        font-size: 120%;
+    }
+
+    /* page-links heads */
+
+    .bottom-nav .links-nav ul span {
+        font-size: 350%;
+    }
+
+    /* liscensing Docs. of site navigations */
+
+    .bottom-nav .liscense-nav {
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bottom-nav .liscense-nav span {
+        margin-bottom: 1rem;
+        font-size: 130%;
+    }
+}
+
+
+/* medium & small Tabs/ iPads / Phones */
+@media only screen and (max-width: 576px) {
+
+    /* logo-social navigations */
+
+    .bottom-nav .contact-nav .logo-social img.logo {
+        width: 35px;
+    }
+
+    .bottom-nav .contact-nav .logo-social .social a {
+        font-size: 100%;
+        padding: .2rem .5rem;
+    }
+
+    /* mailing contacts navigations */
+
+    .bottom-nav .contact-nav span.mail {
+        font-size: 80%;
+    }
+
+    .bottom-nav .contact-nav a.mail {
+        font-size: 150%;
+    }
+
+    /* liscensing Docs. of site navigations */
+
+    .bottom-nav .liscense-nav span {
+        font-size: 70%;
+    }
+
+    /* page-links heads */
+    .bottom-nav .links-nav ul span {
+        font-size: 250%;
+    }
+
+    /* page-links set01 */
+    .bottom-nav .links-nav ul {
+        font-size: 70%;
+    }
+}
