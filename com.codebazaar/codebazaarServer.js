@@ -14,7 +14,7 @@ const port = process.env.PORT || 4500;
 
 const app = express();
 const staticFiles = path.join(__dirname, 'codebazaar_Apps');
-const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates');
+const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates/viewerFiles');
 
 /* ==========================================
             API Middlewares set02
