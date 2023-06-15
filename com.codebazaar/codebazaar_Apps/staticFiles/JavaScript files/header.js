@@ -4,9 +4,14 @@
 let navigation = document.getElementById('menu');
 let menuOn = document.getElementById("show-menu");
 let menuOff = document.getElementById("hide-menu");
+let themes = document.getElementById('modes');
+let darkMode = document.getElementById('dark');
+let lightMode = document.getElementById('light');
 
+// initializing processings to relevant events
 menuOn.addEventListener('click', menuShow);
 menuOff.addEventListener('click', menuHide);
+themes.addEventListener('click', themeMode);
 
 // function for activate menu
 function menuShow() {
@@ -21,15 +26,6 @@ function menuHide() {
     menuOff.style.display = 'none';
     navigation.style.display = 'none';
 }
-
-
-
-// function for activate Theme-mode
-let themes = document.getElementById('modes');
-let darkMode = document.getElementById('dark');
-let lightMode = document.getElementById('light');
-
-themes.addEventListener('click', themeMode);
 
 // function for activate theme-modes
 function themeMode() {
