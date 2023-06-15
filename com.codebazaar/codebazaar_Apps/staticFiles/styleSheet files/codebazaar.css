@@ -171,9 +171,8 @@ body{
     
 }
 
-.head .modes .light {
+.head .modes .dark {
     display: none;
-
 }
 
 /* menubar toggler */
