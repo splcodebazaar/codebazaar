@@ -1,6 +1,6 @@
 /* =======header Js======= */
 
-// creating menu togglle controllers
+// creating menu environment controllers
 let navigation = document.getElementById('menu');
 let menuOn = document.getElementById("show-menu");
 let menuOff = document.getElementById("hide-menu");
