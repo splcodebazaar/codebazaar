@@ -267,6 +267,7 @@ body{
 .bottom-nav .contact-nav a.mail {
     font-size: 150%;
     color: white;
+    text-shadow: 0 0 2rem black;
 }
 
 /* liscensing Docs. of site navigations */
