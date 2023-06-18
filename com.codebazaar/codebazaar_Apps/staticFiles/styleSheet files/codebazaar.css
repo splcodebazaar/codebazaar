@@ -11,6 +11,7 @@ a { text-decoration: none; }
 ::-webkit-scrollbar { display: none; }
 
 
+
 /* =======CONFIG-html CSS======= */
 
 html {
@@ -86,11 +87,12 @@ body{
 /* main menubar (middle-menu) */
 
 .menu .mid-menu a.menu-items{
-    transition: all .2s;
+    transition: background .2s, color .2s;
     color: #ffffff;
     font-weight: bolder;
     padding: .3rem 1rem;
     border-radius: 100px;
+    text-decoration: none;
     text-transform: capitalize;
     font-size: 120%;
 }
@@ -277,7 +279,7 @@ body{
 }
 
 .bottom-nav .liscense-nav span{
-    font-size: 80%;
+    font-size: 90%;
     margin: 0% .5rem;
 }
 

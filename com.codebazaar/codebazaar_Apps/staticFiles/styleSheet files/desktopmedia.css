@@ -1,3 +1,44 @@
+/* =======header CSS======= */
+
+/* Large desktops and laptops */
+@media only screen and (max-width: 1200px) {
+
+    /* middle-menubar */
+
+    .menu .mid-menu a.menu-items {
+        font-size: 100%;
+    }
+
+    .products-menu {
+        font-size: 100%;
+    }
+
+    .products-menu a.products-items {
+        font-size: 90%;
+    }
+
+    /* right-menubar */
+
+    .head .ryt-menu a.highlights {
+        font-size: 100%;
+    }
+
+    /* document light modes */
+
+    .head .modes .lights-mode {
+        font-size: 170%;
+
+    }
+
+    /* menubar-toggler */
+
+    .menu-toggle {
+        font-size: medium;
+    }
+}
+
+
+
 /* =======footer CSS======= */
 
 /* Large desktops and laptops */
