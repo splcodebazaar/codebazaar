@@ -223,9 +223,8 @@ body{
 .logo-social img.logo {
     width: 40px;
     opacity: 0.7;
-    aspect-ratio: 1.1/1;
+    aspect-ratio: 1/1.1;
     border-radius: .5rem;
-    transform: scale(1.1);
     box-shadow: 3px 5px 3px #000000b6;
 }
 
@@ -318,4 +317,57 @@ body{
 
 .bottom-nav .links-nav ul a {
     color: white;
+}
+
+/* First Panel */
+
+.section{
+    align-items: center;
+     margin: 80px 0px;
+     justify-content: space-around;
+}
+
+ .leftsection{
+ margin-left: 10%;
+ font-size: 3rem;
+
+}
+.leftsection .btn{
+padding: 8px;
+
+background-color: lavender;
+color: rgb(158, 71, 240);
+border: 5px solid white;
+border-radius: 12px;
+font-size: 25px;
+cursor: pointer;
+}
+.leftsection .buttons{
+padding: 40px 0;
+}
+.leftsection .btn:hover{
+align-items: center;
+background-color: rgb(158, 71, 240) ;
+color:lavender;
+
+}
+.leftsection #element{
+font-size: 60px;
+}
+.purple{
+color: rgb(170, 107, 228);
+}
+.leftsection >h1{
+font-weight: 800;
+font-size: 50px;
+color: rgb(61, 60, 60);
+}
+.rightsection img{
+width: 85%;
+margin: 50px 0;
+}
+#element{
+color: rgb(170, 107, 228);
+font-weight: 700;
+font-size: 50px;
 }
