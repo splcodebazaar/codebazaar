@@ -371,3 +371,52 @@ color: rgb(170, 107, 228);
 font-weight: 700;
 font-size: 50px;
 }
+
+/* Courses Section */
+.coursePanel{
+    background-color: #363030;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+
+
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    background-color: whitesmoke !important;
+    text-align: center;
+    padding-top: 1ch ;
+}
+.courseLogo{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.preBuildPanel{
+    background-color: #363030;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+
+
+}
+
+.pre_build_page{
+    width: 70%;
+    margin: auto;
+    height: auto;
+    background-color: whitesmoke !important;
+    text-align: center;
+    padding-top: 1ch ;
+    font-size: 22px;
+}
+.pre_build_page_thumnail{
+    width: 20ch !important;
+    height: auto ; 
+    display: block;
+    margin: auto;
+}
