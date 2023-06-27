@@ -1,21 +1,12 @@
 /* =======header CSS======= */
 
-/* for large Tabs */
+/* for large Tabs, medium & 
+small Tabs iPads / Phones */
+
 @media only screen and (max-width: 992px) {
 
     .head {
-        height: 80px;
-    }
-
-    /* left-menubar */
-
-    .head>.lft-menu img.logo {
-        height: 65px;
-        aspect-ratio: 1.1/1;
-    }
-
-    .head>.lft-menu .logo-txt {
-        font-size: 250%;
+        padding: 0 1rem;
     }
 
     /* main menubar */
@@ -54,7 +45,7 @@
         width: 100%;
         color: white;
         padding: 1rem;
-        font-size: 200%;
+        font-size: 110%;
         border-radius: 0%;
         border-bottom: 1px solid white;
     }
@@ -62,7 +53,7 @@
     .products-menu {
         color: #fff;
         padding: 1rem;
-        font-size: 200%;
+        font-size: 110%;
         border-bottom: 1px solid white;
     }
 
@@ -71,7 +62,7 @@
     .head .ryt-menu a.highlights {
         margin: 0%;
         margin: 1rem 0;
-        font-size: 200%;
+        font-size: 100%;
         text-align: center;
         display: block;
     }
@@ -79,65 +70,7 @@
     /* document light modes */
 
     .head .modes .lights-mode {
-        font-size: 300%;
-
-    }
-
-    /* menubar-toggler */
-
-    .menu-toggle {
-        display: initial;
-        font-size: xx-large;
-    }
-}
-
-
-/* medium & small Tabs/ iPads / Phones */
-@media only screen and (max-width: 576px) {
-
-    .head {
-        height: 55px;
-        padding: 0 1rem;
-    }
-
-    /* left-menubar */
-
-    .head>.lft-menu img.logo {
-        height: 45px;
-        aspect-ratio: 1.1/1;
-    }
-
-    .head>.lft-menu .logo-txt {
-        font-size: 160%;
-    }
-
-    /* main menubar */
-
-    .menu {
-         height: calc(100% - 55px);
-    }
-
-     /* middle-menubar */
-
-     .menu .mid-menu a.menu-items {
-        font-size: 110%;
-    }
-
-     .products-menu {
-        font-size: 110%;
-    }
-
-     /* right-menubar */
-
-    .head .ryt-menu a.highlights {
-        font-size: 100%;
-    }
-
-    /* document light modes */
-
-    .head .modes .lights-mode {
         font-size: 200%;
-
     }
 
     /* menubar-toggler */
@@ -150,9 +83,21 @@
 
 
 
+/* for small Tabs iPads / Phones */
+
+@media only screen and (max-width: 600px) {
+    .head {
+        padding: 0 1rem;
+    }
+}
+
+
+
 /* =======footer CSS======= */
 
-/* large Tabs / iPads */
+/* for large Tabs, medium & 
+small Tabs iPads / Phones */
+
 @media only screen and (max-width: 992px) {
 
     .bottom-nav {
@@ -164,15 +109,12 @@
         margin-bottom: 2rem;
     }
 
-    /* logo-social navigations */
-
     .bottom-nav .contact-nav .logo-social img.logo {
-        width: 60px;
+        width: 35px;
     }
 
     .bottom-nav .contact-nav .logo-social .social a {
-        font-size: 200%;
-        padding: .5rem 1rem;
+        font-size: 100%;
     }
 
     /* mail contact - navigations */
@@ -183,11 +125,7 @@
     }
 
     .bottom-nav .contact-nav span.mail {
-        font-size: 150%;
-    }
-
-    .bottom-nav .contact-nav a.mail {
-        font-size: 280%;
+        font-size: 80%;
     }
 
     /* direct page navigations */
@@ -200,13 +138,13 @@
 
     .bottom-nav .links-nav ul {
         padding: 0rem 1rem;
-        font-size: 120%;
+        font-size: 70%;
     }
 
     /* page-links heads */
 
     .bottom-nav .links-nav ul span {
-        font-size: 350%;
+        font-size: 250%;
     }
 
     /* liscensing Docs. of site navigations */
@@ -220,48 +158,6 @@
 
     .bottom-nav .liscense-nav span {
         margin-bottom: 1rem;
-        font-size: 130%;
-    }
-}
-
-
-/* medium & small Tabs/ iPads / Phones */
-@media only screen and (max-width: 576px) {
-
-    /* logo-social navigations */
-
-    .bottom-nav .contact-nav .logo-social img.logo {
-        width: 35px;
-    }
-
-    .bottom-nav .contact-nav .logo-social .social a {
-        font-size: 100%;
-        padding: .2rem .5rem;
-    }
-
-    /* mailing contacts navigations */
-
-    .bottom-nav .contact-nav span.mail {
-        font-size: 80%;
-    }
-
-    .bottom-nav .contact-nav a.mail {
-        font-size: 150%;
-    }
-
-    /* liscensing Docs. of site navigations */
-
-    .bottom-nav .liscense-nav span {
-        font-size: 70%;
-    }
-
-    /* page-links heads */
-    .bottom-nav .links-nav ul span {
-        font-size: 250%;
-    }
-
-    /* page-links set01 */
-    .bottom-nav .links-nav ul {
         font-size: 70%;
     }
 }
