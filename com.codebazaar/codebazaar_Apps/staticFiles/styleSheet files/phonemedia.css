@@ -28,12 +28,6 @@ small Tabs iPads / Phones */
         display: none;
     }
 
-    @keyframes menu-slide {
-        100% {
-            bottom: 0%;
-        }
-    }
-
     /* middle-menubar */
 
     .menu .mid-menu {

@@ -40,6 +40,6 @@ app.listen(port, () => {
     console.log(`SERVER STARTED at 127.0.0.1:${port}`);
 })
 
-app.get('', (request, respond) => { respond.render('home') });
+app.get('/', (request, respond) => { respond.render('home') });
 
-// nodemon codebazaarServer.js
+// nodemon serverRoutings.js

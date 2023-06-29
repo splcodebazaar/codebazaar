@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/form.css" type="text/css">
+    <link rel="stylesheet" href="/animate.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Bree+Serif&family=Butcherman&family=Carter+One&family=Creepster&family=Lilita+One&family=Merienda:wght@600&family=Monoton&family=Odibee+Sans&family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&family=Rubik+Pixels&family=Russo+One&family=Share+Tech+Mono&family=Unbounded:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- registeration form creation -->
+    <section align="center" class="register">
+
+        <!-- form image -->
+        <div class="side-frame" id="side-frame">
+            <img src="/logo HD.jpg" alt="form-logo" class="form-logo-img">
+            <img src="/form panel.png" class="form-panel-img" alt="welcome-image">
+            <span class="form-wishing">welcome to codebazaar</span>
+        </div>
+
+        <!-- form-fillings section -->
+        <div class="form-fill" id="form-fill">
+            <!-- <i class="bi bi-xbox"></i> -->
+
+            <!-- button to change form-type -->
+            <p class="formtip">login</p>
+
+
+            <!-- form & form-type -->
+            <form action="/verification" method="post" autocomplete="on" class="login" id="login">
+                <aside class="changeForm">
+                    <span class="suggestor">already have an account?</span>
+                    <button class="reg" id="reg">register</button>
+                </aside>
+
+                <p class="inps inp-1">
+                    <i class="bi bi-person"></i>
+                    <input type="text" name="fullName" class="login fullName" id="fullName"
+                        placeholder="Enter your full name" autofocus>
+                </p>
+                <p class="inps inp-2">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" name="mailId" class="login mailId" id="mailId"
+                        placeholder="Enter your email address">
+                </p>
+                <p class="inps inp-3">
+                    <i class="bi bi-key"></i>
+                    <input type="password" name="idCode" class="login idCode" id="idCode"
+                        placeholder="Set your password!">
+                    <i class="bi bi-eye-slash" id="eye" style="cursor: pointer;"></i>
+                    <!-- <i class="bi bi-eye"></i> -->
+                </p>
+
+                <input type="submit" value="login" class="login-btn" id="login-btn">
+
+                <!-- auto-fill reference -->
+                <p class="reference">create account with <i class="bi bi-google" style="cursor: pointer;"></i></p>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
