@@ -403,7 +403,7 @@ body {
 }
 
 .course {
-    width: 80%;
+    width: 90%;
     margin: auto;
     height: auto;
     background-color: whitesmoke !important;
@@ -412,10 +412,11 @@ body {
 }
 
 .courseLogo {
-    width: 100px;
-    height: 100px;
+    /* width: 90px; */
+    height: 90px;
     display: block;
     margin: auto;
+    /* border-radius: 200px; */
 }
 
 .preBuildPanel {
