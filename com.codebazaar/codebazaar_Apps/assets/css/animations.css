@@ -1,3 +1,33 @@
+/* Entrance Logo Animation */
+@keyframes logoanim {
+    0% {
+        background-size: 10%;
+        visibility: visible;
+        display: block;
+        background-color: rgb(255, 0, 0);
+    }
+
+    25% {
+        background-size: 25%;
+
+        display: block;
+    }
+
+    95% {
+        background-size: 60%;
+
+        display: block;
+    }
+
+    100% {
+        background-size: 60%;
+        opacity: 0;
+        display: none;
+    }
+
+}
+
+
 
 /* menubar orientation-portrait */
 @keyframes menu-slide {

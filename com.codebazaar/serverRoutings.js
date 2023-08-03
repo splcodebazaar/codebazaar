@@ -13,7 +13,7 @@ const port = process.env.PORT || 4500;
 ===========================================*/
 
 const app = express();
-const staticFiles = path.join(__dirname, 'codebazaar_Apps/assets');
+const staticFiles = path.join(__dirname, 'codebazaar_Apps');
 const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates');
 
 /* ==========================================
