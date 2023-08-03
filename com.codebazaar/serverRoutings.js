@@ -13,7 +13,7 @@ const port = process.env.PORT || 4500;
 ===========================================*/
 
 const app = express();
-// const staticFiles = path.join(__dirname, 'codebazaar_Apps');
+const staticFiles = path.join(__dirname, 'codebazaar_Apps/assets');
 const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates');
 
 /* ==========================================
@@ -22,7 +22,7 @@ const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates');
 
 app.use(express.json());
 app.use(express.urlencoded());
-// app.use(express.static(staticFiles));
+app.use(express.static(staticFiles));
 
 /* ==========================================
         API view-engine Directory
