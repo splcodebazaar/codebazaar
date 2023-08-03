@@ -13,8 +13,8 @@ const port = process.env.PORT || 4500;
 ===========================================*/
 
 const app = express();
-const staticFiles = path.join(__dirname, 'codebazaar_Apps');
-const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates/viewerFiles');
+// const staticFiles = path.join(__dirname, 'codebazaar_Apps');
+const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates');
 
 /* ==========================================
             API Middlewares set02
@@ -22,7 +22,7 @@ const templateFiles = path.join(__dirname, 'codebazaar_Apps/templates/viewerFile
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(express.static(staticFiles));
+// app.use(express.static(staticFiles));
 
 /* ==========================================
         API view-engine Directory
@@ -40,6 +40,8 @@ app.listen(port, () => {
     console.log(`SERVER STARTED at 127.0.0.1:${port}`);
 })
 
-app.get('/', (request, respond) => { respond.render('home') });
+app.get('/', (request, respond) => { 
+    respond.render('home') 
+});
 
 // nodemon serverRoutings.js

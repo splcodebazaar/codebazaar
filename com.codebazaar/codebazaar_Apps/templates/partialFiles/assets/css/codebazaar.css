@@ -1,0 +1,446 @@
+/* =======RESETING CSS======= */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* =======CONFIG-html CSS======= */
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 85%;
+}
+
+
+
+/* =======CONFIG-body CSS======= */
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    /* background: linear-gradient(-45deg, #160000, #160000); */
+}
+
+
+
+/* =======CONFIG-header CSS======= */
+
+.head {
+    margin: auto;
+    display: flex;
+    position: fixed;
+    max-width: 1600px;
+    min-width: 300px;
+    width: 100%;
+    height: 55px;
+    z-index: 10;
+    padding: 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #a90404, #000000d5);
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+/* left-menubar */
+
+.head>.lft-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.head>.lft-menu img.logo {
+    height: 45px;
+    aspect-ratio: 1.1/1;
+    margin-right: .5rem;
+    border-radius: .6rem;
+    box-shadow: 2px 1px 3px #00000061;
+}
+
+.head>.lft-menu .logo-txt {
+    color: white;
+    font-size: 160%;
+    font-style: oblique;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/* main menubar */
+
+.menu {
+    flex-grow: 1;
+    letter-spacing: 1px;
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main menubar (middle-menu) */
+
+.menu .mid-menu a.menu-items {
+    transition: background .2s, color .2s;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: .3rem 1rem;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 120%;
+}
+
+.menu .mid-menu a.menu-items:hover {
+    background: white;
+    color: black;
+}
+
+.products-menu {
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: #ffffff;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 120%;
+}
+
+.products-menu summary::marker {
+    content: '';
+}
+
+.products-menu ul {
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    box-shadow: 1px 1px 5px #000000c2;
+    display: none;
+
+}
+
+.products-menu a.products-items {
+    color: black;
+    display: block;
+    padding: .8rem 1rem;
+    font-size: 100%;
+}
+
+.products-menu a.products-items:hover {
+    background: blueviolet;
+    color: white;
+}
+
+.products-menu:hover ul {
+    margin-top: 5px;
+    display: initial;
+}
+
+/* main menubar (right-menu) */
+
+.head .ryt-menu a.highlights {
+    padding: .3rem 1rem;
+    margin-left: 1rem;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 100px;
+    text-transform: capitalize;
+    font-size: 120%;
+}
+
+.head .ryt-menu a#cheats {
+    background-color: blueviolet;
+}
+
+.head .ryt-menu a#login {
+    background-color: red;
+}
+
+/* document light modes */
+
+.head .modes .lights-mode {
+    color: white;
+    font-size: 200%;
+    margin-left: 1.2rem;
+    text-shadow: 0 0 2px white;
+
+}
+
+.head .modes .dark {
+    display: none;
+}
+
+/* menubar toggler */
+
+.menu-toggle {
+    color: white;
+    font-size: large;
+    margin-left: 1rem;
+    display: none;
+}
+
+.menu-toggle .hide-menu {
+    display: none;
+}
+
+
+
+/* =======CONFIG-footer CSS======= */
+
+.bottom-nav {
+    margin: auto;
+    max-width: 1600px;
+    min-width: 300px;
+    outline: 1px solid black;
+    display: flex;
+    width: 100%;
+    padding: 3rem 3rem 3rem 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(90deg, #000000d5, #a90404);
+}
+
+/* contact - navifations */
+
+.bottom-nav .contact-nav {
+    padding-right: 3rem;
+}
+
+/* logo-social navigations */
+
+.bottom-nav .contact-nav .logo-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-nav .contact-nav .logo-social img.logo {
+    width: 40px;
+    opacity: 0.7;
+    aspect-ratio: 1/1.1;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 3px #000000b6;
+}
+
+.bottom-nav .contact-nav .logo-social .social {
+    margin-left: 2rem;
+    padding-top: .5rem;
+}
+
+.bottom-nav .contact-nav .logo-social .social a {
+    font-size: 130%;
+    color: #000000;
+    margin-left: 0.5rem;
+    padding: .2rem .5rem;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 5px 5px black;
+}
+
+/* mailing contacts navigations */
+
+.bottom-nav .contact-nav .mail-contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+}
+
+.bottom-nav .contact-nav span.mail {
+    display: flex;
+    flex-grow: 1;
+    color: #ffffff9c;
+    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+    border-bottom: 2px dotted #fff;
+}
+
+.bottom-nav .contact-nav a.mail {
+    font-size: 150%;
+    color: white;
+    text-shadow: 0 0 2rem black;
+}
+
+/* liscensing Docs. of site navigations */
+
+.bottom-nav .liscense-nav {
+    flex-grow: 1;
+    text-align: center;
+    align-self: flex-end;
+    text-transform: capitalize;
+}
+
+.bottom-nav .liscense-nav span {
+    font-size: 90%;
+    margin: 0% .5rem;
+}
+
+.bottom-nav .liscense-nav span a {
+    color: #ffffff9c;
+}
+
+/* direct page navigations */
+
+.bottom-nav .links-nav {
+    display: flex;
+    padding-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+/* page-links */
+
+.bottom-nav .links-nav ul {
+    font-size: 90%;
+    list-style: none;
+    padding-left: 3rem;
+    text-align: center;
+}
+
+/* page-links heads */
+
+.bottom-nav .links-nav ul span {
+    font-style: oblique;
+    font-size: 300%;
+    color: #ffffff;
+    letter-spacing: .5rem;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.bottom-nav .links-nav ul a {
+    color: white;
+}
+
+
+
+/* =======CONFIG-First Panel CSS======= */
+
+.section {
+    align-items: center;
+    margin: 80px 0px;
+    justify-content: space-around;
+}
+
+.leftsection {
+    margin-left: 10%;
+    font-size: 3rem;
+
+}
+
+.leftsection .btn {
+    padding: 8px;
+    background-color: lavender;
+    color: rgb(158, 71, 240);
+    border: 5px solid white;
+    border-radius: 12px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.leftsection .buttons {
+    padding: 40px 0;
+}
+
+.leftsection .btn:hover {
+    align-items: center;
+    background-color: rgb(158, 71, 240);
+    color: lavender;
+
+}
+
+.leftsection #element {
+    font-size: 60px;
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+.leftsection>h1 {
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(61, 60, 60);
+}
+
+.rightsection img {
+    width: 85%;
+    margin: 50px 0;
+}
+
+#element {
+    color: rgb(170, 107, 228);
+    font-weight: 700;
+    font-size: 50px;
+}
+
+
+
+/* =======CONFIG-Courses Section CSS======= */
+
+.coursePanel {
+    background-color: #363030;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+
+
+}
+
+.course {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    background-color: whitesmoke !important;
+    text-align: center;
+    padding-top: 1ch;
+}
+
+.courseLogo {
+    /* width: 90px; */
+    height: 90px;
+    display: block;
+    margin: auto;
+    /* border-radius: 200px; */
+}
+
+.preBuildPanel {
+    background-color: #363030;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+
+
+}
+
+.pre_build_page {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    background-color: whitesmoke !important;
+    text-align: center;
+    padding-top: 1ch;
+    font-size: 22px;
+}
+
+.pre_build_page_thumnail {
+    width: 20ch !important;
+    height: auto;
+    display: block;
+    margin: auto;
+}
